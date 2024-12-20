@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhúng Biểu Đồ Từ Google Sheets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        .chart-container {
+            width: 800px; /* Kích thước giống như trên Google Sheets */
+            height: 600px; /* Điều chỉnh chiều cao tương ứng */
+            border: 1px solid #ccc; /* Tùy chọn: Thêm viền để phân biệt */
+            overflow: hidden; /* Đảm bảo nội dung không bị tràn */
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="chart-container">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTX_WSSAu4_uICXTlw5TOihiGxR5KbbPU8L1ikkCzq3n91l8Qd87ysXHICjxnwNrZU1FT-EH4gJfiyR/pubchart?oid=377650201&format=interactive" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
